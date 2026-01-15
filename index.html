@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eletro Geração - Serviços Elétricos Profissionais</title>
-    <link rel="icon" href="/assets/bolt.ico" type="image/x-icon">
+    <link rel="icon" href="assets/bolt.ico" type="image/png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
@@ -37,6 +37,10 @@
         
         .blue-gradient {
             background: linear-gradient(90deg, #1A7FFF 0%, #62CFFF 100%);
+        }
+
+        .green-gradient {
+            background: linear-gradient(90deg, #16A34A 0%, #4ADE80 100%);
         }
         
         .red-orange-gradient {
@@ -78,6 +82,7 @@
                 <a href="#inicio" class="text-brand-light hover:text-brand-blue-light transition">Início</a>
                 <a href="#sobre" class="text-brand-light hover:text-brand-blue-light transition">Sobre</a>
                 <a href="#servicos" class="text-brand-light hover:text-brand-blue-light transition">Serviços</a>
+                <a href="#portfolio" class="text-brand-light hover:text-brand-blue-light transition">Portfólio</a>
                 <a href="#contato" class="text-brand-light hover:text-brand-blue-light transition">Contato</a>
             </div>
             
@@ -94,6 +99,7 @@
                 <a href="#inicio" class="text-brand-light hover:text-brand-blue-light transition">Início</a>
                 <a href="#sobre" class="text-brand-light hover:text-brand-blue-light transition">Sobre</a>
                 <a href="#servicos" class="text-brand-light hover:text-brand-blue-light transition">Serviços</a>
+                <a href="#portfolio" class="text-brand-light hover:text-brand-blue-light transition">Portfólio</a>
                 <a href="#contato" class="text-brand-light hover:text-brand-blue-light transition">Contato</a>
             </div>
         </div>
@@ -365,382 +371,195 @@
         </div>
     </section>
 
-        <!-- Portfolio Section -->
+    <!-- Portfolio Section -->
     <section id="portfolio" class="py-16 bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-brand-dark mb-4">Nosso Portfólio</h2>
+                <h2 class="text-3xl font-bold text-brand-dark mb-4">Projetos em Destaque</h2>
                 <div class="w-24 h-1 red-orange-gradient mx-auto mb-6"></div>
                 <p class="text-gray-600 max-w-2xl mx-auto">
-                    Conheça alguns dos nossos principais projetos realizados. Nossa experiência abrange 
-                    desde pequenas instalações residenciais até grandes projetos industriais.
+                    Confira a qualidade dos nossos serviços em detalhes.
                 </p>
             </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden service-card group flex flex-col">
+                    <div class="relative h-[500px] overflow-hidden" id="carousel-1">
+                        <div class="slides-container flex transition-transform duration-500 ease-out h-full">
+                            
+                            <div class="min-w-full h-full relative">
+                                <img class="w-full h-full object-cover" src="assets/pulse_1.jpeg" alt="Pulse Mall">
+                            </div>
 
-            <!-- Portfolio Filter -->
-            <div class="flex flex-wrap justify-center gap-4 mb-10">
-                <button class="category-btn active px-6 py-2 rounded-full border border-gray-300 text-sm font-medium transition-all" data-filter="all">
-                    Todos
-                </button>
-                <button class="category-btn px-6 py-2 rounded-full border border-gray-300 text-sm font-medium transition-all" data-filter="residencial">
-                    Residencial
-                </button>
-                <button class="category-btn px-6 py-2 rounded-full border border-gray-300 text-sm font-medium transition-all" data-filter="comercial">
-                    Comercial
-                </button>
-                <button class="category-btn px-6 py-2 rounded-full border border-gray-300 text-sm font-medium transition-all" data-filter="industrial">
-                    Industrial
-                </button>
-                <button class="category-btn px-6 py-2 rounded-full border border-gray-300 text-sm font-medium transition-all" data-filter="solar">
-                    Energia Solar
-                </button>
-            </div>
-            
-            <!-- Portfolio Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Portfolio Item 1 -->
-                <div class="portfolio-item rounded-lg overflow-hidden shadow-md" data-category="residencial">
-                    <div class="relative h-64 overflow-hidden">
-                        <div class="portfolio-image w-full h-full">
-                            <svg class="w-full h-full" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="400" height="300" fill="#e0f2fe"/>
-                                <rect x="50" y="100" width="300" height="150" fill="#bfdbfe"/>
-                                <rect x="100" y="150" width="80" height="100" fill="#1d4ed8"/>
-                                <rect x="220" y="150" width="80" height="100" fill="#1d4ed8"/>
-                                <rect x="180" y="200" width="40" height="50" fill="#1d4ed8"/>
-                                <polygon points="50,100 200,20 350,100" fill="#93c5fd"/>
-                                <path d="M150,180 L150,200 L130,200 L130,180 Z" fill="#f2f2f2"/>
-                                <path d="M270,180 L270,200 L250,200 L250,180 Z" fill="#f2f2f2"/>
-                                <path d="M200,220 L200,250 L180,250 L180,220 Z" fill="#f2f2f2"/>
-                                <path d="M120,80 L120,95 L110,95 L110,80 Z" fill="#FF5500"/>
-                                <path d="M290,80 L290,95 L280,95 L280,80 Z" fill="#FF5500"/>
-                                <path d="M200,50 L200,70 L190,70 L190,50 Z" fill="#FF5500"/>
-                            </svg>
-                        </div>
-                        <div class="portfolio-overlay absolute inset-0 flex items-center justify-center">
-                            <div class="text-center p-4">
-                                <span class="inline-block bg-brand-orange text-white text-xs px-3 py-1 rounded-full mb-2">Residencial</span>
-                                <h3 class="text-white text-xl font-semibold">Instalação Elétrica Residencial</h3>
-                                <a href="#" class="mt-3 inline-block text-brand-blue-light hover:text-white transition">Ver detalhes</a>
+                            <div class="min-w-full h-full relative bg-black">
+                                <video class="w-full h-full object-cover" controls playsinline>
+                                    <source src="assets/pulse2.mp4" type="video/mp4">
+                                    Seu navegador não suporta vídeos.
+                                </video>
                             </div>
                         </div>
+
+                        <button onclick="moveSlide('carousel-1', -1)" class="absolute top-1/2 left-2 -translate-y-1/2 bg-black/50 hover:bg-brand-orange text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors z-10 backdrop-blur-sm">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button onclick="moveSlide('carousel-1', 1)" class="absolute top-1/2 right-2 -translate-y-1/2 bg-black/50 hover:bg-brand-orange text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors z-10 backdrop-blur-sm">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+
+                        <div class="absolute top-4 right-4 z-10">
+                            <span class="inline-block bg-brand-red text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">Comercial</span>
+                        </div>
+
                     </div>
-                    <div class="p-6 bg-white">
-                        <h3 class="text-lg font-semibold text-brand-dark mb-2">Instalação Elétrica Residencial</h3>
-                        <p class="text-gray-600 mb-3">Projeto completo de instalação elétrica para residência de alto padrão, incluindo automação e iluminação.</p>
-                        <div class="flex items-center text-sm text-gray-500">
-                            <i class="fas fa-map-marker-alt mr-2 text-brand-orange"></i>
-                            <span>São Paulo, SP</span>
+
+                    <div class="p-5 flex-grow border-t border-gray-100">
+                        <h3 class="text-lg font-semibold text-brand-dark mb-2">Pulse - Open Mall</h3>
+                        <div class="mt-auto pt-2 flex items-center text-xs text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2 text-brand-orange"></i>Chapecó, SC
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden service-card group flex flex-col">
+                    <div class="relative h-[500px] overflow-hidden" id="carousel-4">
+                        <div class="slides-container flex transition-transform duration-500 ease-out h-full">
+                            <div class="min-w-full h-full relative">
+                                 <video class="w-full h-full object-cover" controls playsinline>
+                                    <source src="assets/sunglass_1.mp4" type="video/mp4">
+                                    Seu navegador não suporta vídeos.
+                                </video>
+                            </div>
+                        </div>
+
+                        <button onclick="moveSlide('carousel-4', -1)" class="absolute top-1/2 left-2 -translate-y-1/2 bg-black/50 hover:bg-brand-orange text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors z-10 backdrop-blur-sm">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button onclick="moveSlide('carousel-4', 1)" class="absolute top-1/2 right-2 -translate-y-1/2 bg-black/50 hover:bg-brand-orange text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors z-10 backdrop-blur-sm">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+
+                        <div class="absolute top-4 right-4 z-10">
+                            <span class="inline-block bg-brand-blue text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">Residencial</span>
+                        </div>
+
+                    </div>
+
+                    <div class="p-5 flex-grow border-t border-gray-100">
+                        <h3 class="text-lg font-semibold text-brand-dark mb-2">Casa - Alto Padrão</h3>
+                        <div class="mt-auto pt-2 flex items-center text-xs text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2 text-brand-orange"></i>Guatambu, SC
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden service-card group flex flex-col">
+                    <div class="relative h-[500px] overflow-hidden" id="carousel-2">
+                        <div class="slides-container flex transition-transform duration-500 ease-out h-full">
+                            <div class="min-w-full h-full relative">
+                                <img class="w-full h-full object-cover" src="assets/crocs_1.jpeg" alt="Pulse Mall">
+                            </div>
+                            <div class="min-w-full h-full relative">
+                                 <video class="w-full h-full object-cover" controls playsinline>
+                                    <source src="assets/crocs_2.mp4" type="video/mp4">
+                                    Seu navegador não suporta vídeos.
+                                </video>
+                            </div>
+                        </div>
+
+                        <button onclick="moveSlide('carousel-2', -1)" class="absolute top-1/2 left-2 -translate-y-1/2 bg-black/50 hover:bg-brand-orange text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors z-10 backdrop-blur-sm">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button onclick="moveSlide('carousel-2', 1)" class="absolute top-1/2 right-2 -translate-y-1/2 bg-black/50 hover:bg-brand-orange text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors z-10 backdrop-blur-sm">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+
+                        <div class="absolute top-4 right-4 z-10">
+                            <span class="inline-block bg-brand-red text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">Comercial</span>
+                        </div>
+
+                    </div>
+
+                    <div class="p-5 flex-grow border-t border-gray-100">
+                        <h3 class="text-lg font-semibold text-brand-dark mb-2">Crocs - Pulse Open Mall</h3>
+                        <div class="mt-auto pt-2 flex items-center text-xs text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2 text-brand-orange"></i>Chapecó, SC
                         </div>
                     </div>
                 </div>
                 
-                <!-- Portfolio Item 2 -->
-                <div class="portfolio-item rounded-lg overflow-hidden shadow-md" data-category="comercial">
-                    <div class="relative h-64 overflow-hidden">
-                        <div class="portfolio-image w-full h-full">
-                            <svg class="w-full h-full" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="400" height="300" fill="#e0f2fe"/>
-                                <rect x="50" y="50" width="300" height="200" fill="#bfdbfe"/>
-                                <rect x="70" y="70" width="260" height="160" fill="#1d4ed8" opacity="0.7"/>
-                                <rect x="90" y="90" width="220" height="120" fill="#f2f2f2"/>
-                                <rect x="110" y="110" width="80" height="80" fill="#1A7FFF" opacity="0.5"/>
-                                <rect x="210" y="110" width="80" height="80" fill="#1A7FFF" opacity="0.5"/>
-                                <circle cx="150" cy="150" r="20" fill="#FF5500"/>
-                                <circle cx="250" cy="150" r="20" fill="#FF5500"/>
-                                <rect x="140" y="210" width="120" height="20" fill="#1A7FFF"/>
-                                <path d="M140,210 L140,230 M260,210 L260,230" stroke="#FF5500" stroke-width="3"/>
-                            </svg>
-                        </div>
-                        <div class="portfolio-overlay absolute inset-0 flex items-center justify-center">
-                            <div class="text-center p-4">
-                                <span class="inline-block bg-brand-orange text-white text-xs px-3 py-1 rounded-full mb-2">Comercial</span>
-                                <h3 class="text-white text-xl font-semibold">Instalação em Loja Comercial</h3>
-                                <a href="#" class="mt-3 inline-block text-brand-blue-light hover:text-white transition">Ver detalhes</a>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden service-card group flex flex-col">
+                    <div class="relative h-[500px] overflow-hidden" id="carousel-3">
+                        <div class="slides-container flex transition-transform duration-500 ease-out h-full">
+                            <div class="min-w-full h-full relative">
+                                 <video class="w-full h-full object-cover" controls playsinline>
+                                    <source src="assets/lacoste_1.mp4" type="video/mp4">
+                                    Seu navegador não suporta vídeos.
+                                </video>
+                            </div>
+                            <div class="min-w-full h-full relative">
+                                 <video class="w-full h-full object-cover" controls playsinline>
+                                    <source src="assets/lacoste2.mp4" type="video/mp4">
+                                    Seu navegador não suporta vídeos.
+                                </video>
                             </div>
                         </div>
+
+                        <button onclick="moveSlide('carousel-3', -1)" class="absolute top-1/2 left-2 -translate-y-1/2 bg-black/50 hover:bg-brand-orange text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors z-10 backdrop-blur-sm">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button onclick="moveSlide('carousel-3', 1)" class="absolute top-1/2 right-2 -translate-y-1/2 bg-black/50 hover:bg-brand-orange text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors z-10 backdrop-blur-sm">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+
+                        <div class="absolute top-4 right-4 z-10">
+                            <span class="inline-block bg-brand-red text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">Comercial</span>
+                        </div>
                     </div>
-                    <div class="p-6 bg-white">
-                        <h3 class="text-lg font-semibold text-brand-dark mb-2">Instalação em Loja Comercial</h3>
-                        <p class="text-gray-600 mb-3">Projeto elétrico completo para loja de departamentos, incluindo iluminação especial e sistema de segurança.</p>
-                        <div class="flex items-center text-sm text-gray-500">
-                            <i class="fas fa-map-marker-alt mr-2 text-brand-orange"></i>
-                            <span>Rio de Janeiro, RJ</span>
+
+                    <div class="p-5 flex-grow border-t border-gray-100">
+                        <h3 class="text-lg font-semibold text-brand-dark mb-2">Lacoste - Pulse Open Mall</h3>
+                        <div class="mt-auto pt-2 flex items-center text-xs text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2 text-brand-orange"></i>Chapecó, SC
                         </div>
                     </div>
                 </div>
-                
-                <!-- Portfolio Item 3 -->
-                <div class="portfolio-item rounded-lg overflow-hidden shadow-md" data-category="industrial">
-                    <div class="relative h-64 overflow-hidden">
-                        <div class="portfolio-image w-full h-full">
-                            <svg class="w-full h-full" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="400" height="300" fill="#e0f2fe"/>
-                                <rect x="50" y="100" width="300" height="150" fill="#bfdbfe"/>
-                                <rect x="70" y="120" width="260" height="130" fill="#1d4ed8" opacity="0.6"/>
-                                <rect x="90" y="140" width="220" height="110" fill="#0A0A1A" opacity="0.8"/>
-                                <rect x="110" y="160" width="50" height="70" fill="#1A7FFF"/>
-                                <rect x="175" y="160" width="50" height="70" fill="#1A7FFF"/>
-                                <rect x="240" y="160" width="50" height="70" fill="#1A7FFF"/>
-                                <path d="M50,100 L100,50 L350,50 L350,100 Z" fill="#93c5fd"/>
-                                <path d="M110,160 L160,160 M175,160 L225,160 M240,160 L290,160" stroke="#FF5500" stroke-width="3"/>
-                                <path d="M110,230 L160,230 M175,230 L225,230 M240,230 L290,230" stroke="#FF5500" stroke-width="3"/>
-                                <path d="M135,160 L135,230 M200,160 L200,230 M265,160 L265,230" stroke="#FF5500" stroke-width="3"/>
-                            </svg>
-                        </div>
-                        <div class="portfolio-overlay absolute inset-0 flex items-center justify-center">
-                            <div class="text-center p-4">
-                                <span class="inline-block bg-brand-orange text-white text-xs px-3 py-1 rounded-full mb-2">Industrial</span>
-                                <h3 class="text-white text-xl font-semibold">Instalação Industrial</h3>
-                                <a href="#" class="mt-3 inline-block text-brand-blue-light hover:text-white transition">Ver detalhes</a>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden service-card group flex flex-col">
+                    <div class="relative h-[500px] overflow-hidden" id="carousel-4">
+                        <div class="slides-container flex transition-transform duration-500 ease-out h-full">
+                            <div class="min-w-full h-full relative">
+                                 <video class="w-full h-full object-cover" controls playsinline>
+                                    <source src="assets/sunglass_1.mp4" type="video/mp4">
+                                    Seu navegador não suporta vídeos.
+                                </video>
                             </div>
                         </div>
+
+                        <button onclick="moveSlide('carousel-4', -1)" class="absolute top-1/2 left-2 -translate-y-1/2 bg-black/50 hover:bg-brand-orange text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors z-10 backdrop-blur-sm">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button onclick="moveSlide('carousel-4', 1)" class="absolute top-1/2 right-2 -translate-y-1/2 bg-black/50 hover:bg-brand-orange text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors z-10 backdrop-blur-sm">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+
+                        <div class="absolute top-4 right-4 z-10">
+                            <span class="inline-block bg-brand-red text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">Comercial</span>
+                        </div>
+
                     </div>
-                    <div class="p-6 bg-white">
-                        <h3 class="text-lg font-semibold text-brand-dark mb-2">Instalação Industrial</h3>
-                        <p class="text-gray-600 mb-3">Projeto e execução de instalação elétrica industrial de alta tensão, incluindo subestação e painéis de controle.</p>
-                        <div class="flex items-center text-sm text-gray-500">
-                            <i class="fas fa-map-marker-alt mr-2 text-brand-orange"></i>
-                            <span>Campinas, SP</span>
+
+                    <div class="p-5 flex-grow border-t border-gray-100">
+                        <h3 class="text-lg font-semibold text-brand-dark mb-2">Sunglass Hut - Pulse Open Mall</h3>
+                        <div class="mt-auto pt-2 flex items-center text-xs text-gray-500">
+                            <i class="fas fa-map-marker-alt mr-2 text-brand-orange"></i>Chapecó, SC
                         </div>
                     </div>
                 </div>
-                
-                <!-- Portfolio Item 4 -->
-                <div class="portfolio-item rounded-lg overflow-hidden shadow-md" data-category="solar">
-                    <div class="relative h-64 overflow-hidden">
-                        <div class="portfolio-image w-full h-full">
-                            <svg class="w-full h-full" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="400" height="300" fill="#e0f2fe"/>
-                                <rect x="50" y="100" width="300" height="150" fill="#bfdbfe"/>
-                                <rect x="70" y="120" width="260" height="130" fill="#1d4ed8" opacity="0.3"/>
-                                <rect x="90" y="50" width="220" height="150" fill="#0A0A1A" opacity="0.1"/>
-                                <g transform="rotate(-10, 200, 125)">
-                                    <rect x="100" y="70" width="200" height="110" fill="#1A7FFF" opacity="0.7"/>
-                                    <line x1="100" y1="90" x2="300" y2="90" stroke="#0A0A1A" stroke-width="1"/>
-                                    <line x1="100" y1="110" x2="300" y2="110" stroke="#0A0A1A" stroke-width="1"/>
-                                    <line x1="100" y1="130" x2="300" y2="130" stroke="#0A0A1A" stroke-width="1"/>
-                                    <line x1="100" y1="150" x2="300" y2="150" stroke="#0A0A1A" stroke-width="1"/>
-                                    <line x1="120" y1="70" x2="120" y2="180" stroke="#0A0A1A" stroke-width="1"/>
-                                    <line x1="140" y1="70" x2="140" y2="180" stroke="#0A0A1A" stroke-width="1"/>
-                                    <line x1="160" y1="70" x2="160" y2="180" stroke="#0A0A1A" stroke-width="1"/>
-                                    <line x1="180" y1="70" x2="180" y2="180" stroke="#0A0A1A" stroke-width="1"/>
-                                    <line x1="200" y1="70" x2="200" y2="180" stroke="#0A0A1A" stroke-width="1"/>
-                                    <line x1="220" y1="70" x2="220" y2="180" stroke="#0A0A1A" stroke-width="1"/>
-                                    <line x1="240" y1="70" x2="240" y2="180" stroke="#0A0A1A" stroke-width="1"/>
-                                    <line x1="260" y1="70" x2="260" y2="180" stroke="#0A0A1A" stroke-width="1"/>
-                                    <line x1="280" y1="70" x2="280" y2="180" stroke="#0A0A1A" stroke-width="1"/>
-                                </g>
-                                <circle cx="200" cy="230" r="20" fill="#FF5500"/>
-                                <path d="M190,230 L210,230 M200,220 L200,240" stroke="white" stroke-width="3"/>
-                                <path d="M200,180 L200,210" stroke="#FF5500" stroke-width="3"/>
-                            </svg>
-                        </div>
-                        <div class="portfolio-overlay absolute inset-0 flex items-center justify-center">
-                            <div class="text-center p-4">
-                                <span class="inline-block bg-brand-orange text-white text-xs px-3 py-1 rounded-full mb-2">Energia Solar</span>
-                                <h3 class="text-white text-xl font-semibold">Sistema Fotovoltaico</h3>
-                                <a href="#" class="mt-3 inline-block text-brand-blue-light hover:text-white transition">Ver detalhes</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-6 bg-white">
-                        <h3 class="text-lg font-semibold text-brand-dark mb-2">Sistema Fotovoltaico</h3>
-                        <p class="text-gray-600 mb-3">Instalação de sistema de energia solar fotovoltaica em residência, gerando economia de até 95% na conta de luz.</p>
-                        <div class="flex items-center text-sm text-gray-500">
-                            <i class="fas fa-map-marker-alt mr-2 text-brand-orange"></i>
-                            <span>Florianópolis, SC</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Portfolio Item 5 -->
-                <div class="portfolio-item rounded-lg overflow-hidden shadow-md" data-category="comercial">
-                    <div class="relative h-64 overflow-hidden">
-                        <div class="portfolio-image w-full h-full">
-                            <svg class="w-full h-full" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="400" height="300" fill="#e0f2fe"/>
-                                <rect x="50" y="80" width="300" height="170" fill="#bfdbfe"/>
-                                <rect x="70" y="100" width="260" height="150" fill="#1d4ed8" opacity="0.5"/>
-                                <rect x="90" y="120" width="220" height="130" fill="#f2f2f2"/>
-                                <circle cx="120" cy="150" r="15" fill="#FF5500"/>
-                                <circle cx="170" cy="150" r="15" fill="#FF5500"/>
-                                <circle cx="220" cy="150" r="15" fill="#FF5500"/>
-                                <circle cx="270" cy="150" r="15" fill="#FF5500"/>
-                                <rect x="110" y="180" width="20" height="50" fill="#1A7FFF"/>
-                                <rect x="160" y="180" width="20" height="50" fill="#1A7FFF"/>
-                                <rect x="210" y="180" width="20" height="50" fill="#1A7FFF"/>
-                                <rect x="260" y="180" width="20" height="50" fill="#1A7FFF"/>
-                                <path d="M50,80 L200,40 L350,80" fill="#93c5fd"/>
-                                <path d="M120,150 L120,150 M170,150 L170,150 M220,150 L220,150 M270,150 L270,150" stroke="white" stroke-width="8" stroke-linecap="round"/>
-                            </svg>
-                        </div>
-                        <div class="portfolio-overlay absolute inset-0 flex items-center justify-center">
-                            <div class="text-center p-4">
-                                <span class="inline-block bg-brand-orange text-white text-xs px-3 py-1 rounded-full mb-2">Comercial</span>
-                                <h3 class="text-white text-xl font-semibold">Iluminação Comercial</h3>
-                                <a href="#" class="mt-3 inline-block text-brand-blue-light hover:text-white transition">Ver detalhes</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-6 bg-white">
-                        <h3 class="text-lg font-semibold text-brand-dark mb-2">Iluminação Comercial</h3>
-                        <p class="text-gray-600 mb-3">Projeto de iluminação para centro comercial, com foco em eficiência energética e conforto visual.</p>
-                        <div class="flex items-center text-sm text-gray-500">
-                            <i class="fas fa-map-marker-alt mr-2 text-brand-orange"></i>
-                            <span>Belo Horizonte, MG</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Portfolio Item 6 -->
-                <div class="portfolio-item rounded-lg overflow-hidden shadow-md" data-category="residencial">
-                    <div class="relative h-64 overflow-hidden">
-                        <div class="portfolio-image w-full h-full">
-                            <svg class="w-full h-full" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="400" height="300" fill="#e0f2fe"/>
-                                <rect x="100" y="100" width="200" height="150" fill="#bfdbfe"/>
-                                <rect x="120" y="120" width="160" height="130" fill="#1d4ed8" opacity="0.4"/>
-                                <rect x="140" y="140" width="120" height="110" fill="#f2f2f2"/>
-                                <circle cx="200" cy="180" r="30" fill="#0A0A1A" opacity="0.1"/>
-                                <path d="M180,180 L220,180 M200,160 L200,200" stroke="#FF5500" stroke-width="4"/>
-                                <path d="M160,160 C160,160 180,140 200,160 C220,180 240,160 240,160" stroke="#1A7FFF" stroke-width="3" fill="none"/>
-                                <path d="M160,200 C160,200 180,220 200,200 C220,180 240,200 240,200" stroke="#1A7FFF" stroke-width="3" fill="none"/>
-                                <rect x="170" y="80" width="60" height="40" fill="#93c5fd"/>
-                                <path d="M170,80 L200,60 L230,80" fill="#93c5fd"/>
-                            </svg>
-                        </div>
-                        <div class="portfolio-overlay absolute inset-0 flex items-center justify-center">
-                            <div class="text-center p-4">
-                                <span class="inline-block bg-brand-orange text-white text-xs px-3 py-1 rounded-full mb-2">Residencial</span>
-                                <h3 class="text-white text-xl font-semibold">Automação Residencial</h3>
-                                <a href="#" class="mt-3 inline-block text-brand-blue-light hover:text-white transition">Ver detalhes</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-6 bg-white">
-                        <h3 class="text-lg font-semibold text-brand-dark mb-2">Automação Residencial</h3>
-                        <p class="text-gray-600 mb-3">Sistema de automação residencial completo, incluindo controle de iluminação, temperatura e segurança.</p>
-                        <div class="flex items-center text-sm text-gray-500">
-                            <i class="fas fa-map-marker-alt mr-2 text-brand-orange"></i>
-                            <span>Curitiba, PR</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- View More Button -->
-            <div class="text-center mt-12">
-                <a href="#" class="blue-gradient hover:opacity-90 text-white font-medium py-3 px-8 rounded-lg transition duration-300 inline-block">
-                    Ver mais projetos
-                </a>
+
             </div>
         </div>
     </section>
-
-    <!-- CTA Section
-    <section class="py-16 bg-brand-dark">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold text-brand-light mb-6">Pronto para resolver seus problemas elétricos?</h2>
-            <p class="text-gray-300 mb-8 max-w-2xl mx-auto">
-                Entre em contato conosco agora mesmo e solicite um orçamento sem compromisso. 
-                Nossa equipe está pronta para atender suas necessidades com qualidade e eficiência.
-            </p>
-            <a href="#contato" class="red-orange-gradient hover:opacity-90 text-white font-medium py-3 px-8 rounded-lg transition duration-300 inline-block">
-                Solicitar orçamento
-            </a>
-        </div>
-    </section> -->
-
-    <!-- Depoimentos Section -->
-    <!-- <section class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-brand-dark mb-4">O que nossos clientes dizem</h2>
-                <div class="w-24 h-1 red-orange-gradient mx-auto"></div>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                <div class="bg-gray-50 rounded-lg p-6 shadow-sm">
-                    <div class="flex items-center mb-4">
-                        <div class="text-brand-orange">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 italic mb-6">
-                        "Excelente serviço! A equipe da Eletro Geração foi muito profissional e resolveu 
-                        rapidamente o problema elétrico que tínhamos em nossa residência. Recomendo!"
-                    </p>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 blue-gradient rounded-full flex items-center justify-center mr-4">
-                            <span class="text-white font-bold">RM</span>
-                        </div>
-                        <div>
-                            <h4 class="font-medium text-brand-dark">Roberto Mendes</h4>
-                            <p class="text-gray-500 text-sm">Cliente Residencial</p>
-                        </div>
-                    </div>
-                </div>
-                
- 
-                <div class="bg-gray-50 rounded-lg p-6 shadow-sm">
-                    <div class="flex items-center mb-4">
-                        <div class="text-brand-orange">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 italic mb-6">
-                        "Contratamos a Eletro Geração para fazer toda a instalação elétrica da nossa nova loja. 
-                        O trabalho foi impecável, dentro do prazo e com um ótimo custo-benefício."
-                    </p>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 blue-gradient rounded-full flex items-center justify-center mr-4">
-                            <span class="text-white font-bold">CS</span>
-                        </div>
-                        <div>
-                            <h4 class="font-medium text-brand-dark">Carla Santos</h4>
-                            <p class="text-gray-500 text-sm">Cliente Comercial</p>
-                        </div>
-                    </div>
-                </div>
-                
-
-                <div class="bg-gray-50 rounded-lg p-6 shadow-sm">
-                    <div class="flex items-center mb-4">
-                        <div class="text-brand-orange">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 italic mb-6">
-                        "A instalação do sistema de energia solar feita pela Eletro Geração superou nossas expectativas. 
-                        Já estamos economizando mais do que o previsto na conta de luz."
-                    </p>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 blue-gradient rounded-full flex items-center justify-center mr-4">
-                            <span class="text-white font-bold">PA</span>
-                        </div>
-                        <div>
-                            <h4 class="font-medium text-brand-dark">Paulo Almeida</h4>
-                            <p class="text-gray-500 text-sm">Cliente Energia Solar</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <!-- Contato Section -->
     <section id="contato" class="py-16 bg-gray-50">
@@ -804,7 +623,7 @@
                     </form>
                 </div>
                 
-                <!-- Informações de contato (mantido igual) -->
+                <!-- Informações de contato -->
                 <div class="lg:w-1/2">
                     <div class="bg-white rounded-lg shadow-md p-8 mb-8">
                         <h3 class="text-2xl font-semibold text-brand-dark mb-6">Informações de contato</h3>
@@ -842,11 +661,14 @@
                     <div class="bg-white rounded-lg shadow-md p-8">
                         <h3 class="text-xl font-semibold text-brand-dark mb-4">Siga-nos nas redes sociais</h3>
                         <div class="flex space-x-4">
-                            <a href="#" class="blue-gradient hover:opacity-90 text-white p-3 rounded-full transition duration-300">
+                            <a href="https://www.instagram.com/eletro_geracao_/" target="_blank" class="red-orange-gradient hover:opacity-90 text-white p-3 rounded-full transition duration-300">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="#" class="red-orange-gradient hover:opacity-90 text-white p-3 rounded-full transition duration-300">
+                            <a href="#" class="green-gradient hover:opacity-90 text-white p-3 rounded-full transition duration-300">
                                 <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="https://www.facebook.com/profile.php?id=61586522691234&locale=pt_BR" target="_blank" class="blue-gradient hover:opacity-90 text-white p-3 rounded-full transition duration-300">
+                                <i class="fab fa-facebook"></i>
                             </a>
                         </div>
                     </div>
@@ -882,6 +704,7 @@
                             <li><a href="#inicio" class="text-gray-400 hover:text-brand-blue-light transition">Início</a></li>
                             <li><a href="#sobre" class="text-gray-400 hover:text-brand-blue-light transition">Sobre</a></li>
                             <li><a href="#servicos" class="text-gray-400 hover:text-brand-blue-light transition">Serviços</a></li>
+                            <li><a href="#portfolio" class="text-gray-400 hover:text-brand-blue-light transition">Portfólio</a></li>
                             <li><a href="#contato" class="text-gray-400 hover:text-brand-blue-light transition">Contato</a></li>
                         </ul>
                     </div>
@@ -918,16 +741,16 @@
             <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
                 <p>&copy; 2025 Eletro Geração. Todos os direitos reservados.</p>
                 <div class="mt-4 md:mt-0">
-                    <!-- <a href="#" class="text-gray-400 hover:text-brand-blue-light transition mx-2">
+                    <a href="https://www.facebook.com/profile.php?id=61586522691234&locale=pt_BR" target="_blank" class="text-gray-400 hover:text-brand-blue-light transition mx-2">
                         <i class="fab fa-facebook-f"></i>
-                    </a> -->
-                    <a href="#" class="text-gray-400 hover:text-brand-blue-light transition mx-2">
+                    </a>
+                    <a href="https://www.instagram.com/eletro_geracao_/" target="_blank" class="text-gray-400 hover:text-brand-blue-light transition mx-2">
                         <i class="fab fa-instagram"></i>
                     </a>
                     <!-- <a href="#" class="text-gray-400 hover:text-brand-blue-light transition mx-2">
                         <i class="fab fa-linkedin-in"></i>
                     </a> -->
-                    <a href="#" class="text-gray-400 hover:text-brand-orange transition mx-2">
+                    <a href="#" target="_blank" class="text-gray-400 hover:text-brand-orange transition mx-2">
                         <i class="fab fa-whatsapp"></i>
                     </a>
                 </div>
@@ -936,6 +759,38 @@
     </footer>
 
     <script>
+        const carouselState = {
+            'carousel-1': 0,
+            'carousel-2': 0,
+            'carousel-3': 0,
+            'carousel-4': 0
+        };
+
+        function moveSlide(carouselId, direction) {
+            const carousel = document.getElementById(carouselId);
+            if (!carousel) return;
+
+            const container = carousel.querySelector('.slides-container');
+            const slideCount = container.children.length;
+            
+            // Atualiza o estado
+            let currentIndex = carouselState[carouselId];
+            currentIndex += direction;
+
+            // Loop infinito (se passar do último volta pro primeiro, e vice-versa)
+            if (currentIndex < 0) {
+                currentIndex = slideCount - 1;
+            } else if (currentIndex >= slideCount) {
+                currentIndex = 0;
+            }
+
+            carouselState[carouselId] = currentIndex;
+
+            // Move o container usando transform CSS
+            // Como cada slide tem min-w-full (100%), movemos 100% * index
+            container.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
         // Mobile Menu Toggle
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
