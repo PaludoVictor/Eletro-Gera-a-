@@ -426,7 +426,7 @@
                         <div class="slides-container flex transition-transform duration-500 ease-out h-full">
                             <div class="min-w-full h-full relative">
                                  <video class="w-full h-full object-cover" controls playsinline>
-                                    <source src="assets/sunglass_1.mp4" type="video/mp4">
+                                    <source src="assets/casa_1.mp4" type="video/mp4">
                                     Seu navegador não suporta vídeos.
                                 </video>
                             </div>
@@ -526,20 +526,32 @@
                 </div>
 
                 <div class="bg-white rounded-lg shadow-md overflow-hidden service-card group flex flex-col">
-                    <div class="relative h-[500px] overflow-hidden" id="carousel-4">
+                    <div class="relative h-[500px] overflow-hidden" id="carousel-5">
                         <div class="slides-container flex transition-transform duration-500 ease-out h-full">
                             <div class="min-w-full h-full relative">
+                                  <img class="w-full h-full object-cover" src="assets/sunglass_1.jpeg" alt="Pulse Mall">
+                            </div>
+                            <div class="min-w-full h-full relative">
                                  <video class="w-full h-full object-cover" controls playsinline>
-                                    <source src="assets/sunglass_1.mp4" type="video/mp4">
+                                    <source src="assets/sunglass_2.mp4" type="video/mp4">
                                     Seu navegador não suporta vídeos.
                                 </video>
                             </div>
+                            <div class="min-w-full h-full relative">
+                                  <img class="w-full h-full object-cover" src="assets/sunglass_3.jpeg" alt="Pulse Mall">
+                            </div>
+                            <div class="min-w-full h-full relative">
+                                  <img class="w-full h-full object-cover" src="assets/sunglass_4.jpeg" alt="Pulse Mall">
+                            </div>
+                            <div class="min-w-full h-full relative">
+                                <img class="w-full h-full object-cover" src="assets/sunglass_5.jpeg" alt="Pulse Mall">
+                            </div>
                         </div>
 
-                        <button onclick="moveSlide('carousel-4', -1)" class="absolute top-1/2 left-2 -translate-y-1/2 bg-black/50 hover:bg-brand-orange text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors z-10 backdrop-blur-sm">
+                        <button onclick="moveSlide('carousel-5', -1)" class="absolute top-1/2 left-2 -translate-y-1/2 bg-black/50 hover:bg-brand-orange text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors z-10 backdrop-blur-sm">
                             <i class="fas fa-chevron-left"></i>
                         </button>
-                        <button onclick="moveSlide('carousel-4', 1)" class="absolute top-1/2 right-2 -translate-y-1/2 bg-black/50 hover:bg-brand-orange text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors z-10 backdrop-blur-sm">
+                        <button onclick="moveSlide('carousel-5', 1)" class="absolute top-1/2 right-2 -translate-y-1/2 bg-black/50 hover:bg-brand-orange text-white w-10 h-10 rounded-full flex items-center justify-center transition-colors z-10 backdrop-blur-sm">
                             <i class="fas fa-chevron-right"></i>
                         </button>
 
@@ -763,7 +775,8 @@
             'carousel-1': 0,
             'carousel-2': 0,
             'carousel-3': 0,
-            'carousel-4': 0
+            'carousel-4': 0,
+            'carousel-5': 0
         };
 
         function moveSlide(carouselId, direction) {
